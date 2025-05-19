@@ -44,4 +44,4 @@ db = DBSCAN(eps=1.5, min_samples=5).fit(X_scaled)
 df['dbscan_label'] = db.labels_
 
 df['cluster'] = labels
-df.to_csv('films_with_clusters.csv', index=False)
+df.to_csv('movies_metadata.csv', index=False)
